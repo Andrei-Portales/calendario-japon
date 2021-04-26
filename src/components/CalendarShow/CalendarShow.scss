@@ -1,0 +1,192 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation-name: fade;
+  animation-duration: 500ms;
+}
+
+.dialog-back {
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+}
+
+.dialog-main {
+  height: 95%;
+  width: fit-content;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 11;
+
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  align-self: center;
+  animation-name: fade;
+  animation-duration: 500ms;
+}
+
+.calendar-content {
+  position: relative;
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
+  //   padding: 3px;
+  //border: 1px solid grey;
+}
+
+.calendar-content-text {
+  @extend .calendar-content;
+  height: 90%;
+}
+
+.calendar-image {
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  
+  // cursor: grab;
+
+  & img {
+    border-radius: 15px;
+    height: inherit;
+  }
+}
+
+.text-image {
+  height: 3%;
+  font-size: 1.2rem;
+  // background-color: red;
+  padding: 15px;
+  margin-bottom: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  color: #fff;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  border-radius: 15px;
+
+}
+
+.arrow {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 300ms;
+
+  & img {
+    display: none;
+    height: 20%;
+    width: 80%;
+  }
+
+  &:hover {
+    & img {
+      display: block;
+    }
+    animation-name: fade;
+    animation-duration: 300ms;
+  }
+}
+
+.left-arrow {
+  @extend .arrow;
+
+  left: 0;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+
+  &:hover {
+    background-image: linear-gradient(
+      to right,
+      rgba($color: #000000, $alpha: 0.8),
+      transparent
+    );
+  }
+}
+
+.right-arrow {
+  @extend .arrow;
+
+  right: 0;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+
+  &:hover {
+    background-image: linear-gradient(
+      to left,
+      rgba($color: #000000, $alpha: 0.8),
+      transparent
+    );
+  }
+}
+
+.zoom-options {
+  position: absolute;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  height: 23px;
+  width: 23px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+    & img {
+      height: 75%;
+      width: 75%;
+    }
+}
+
+.loading-text {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+  & div {
+     background-color: rgba($color: #000000, $alpha: 1);
+    // padding: 10px;
+     margin: 5px;
+    border-radius: 50%;
+  }
+}
