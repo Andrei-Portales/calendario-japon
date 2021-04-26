@@ -1,0 +1,146 @@
+.content {
+    display: inline-flex;
+    align-items: center;
+    height: calc(100vh);
+    width: calc(100vw);
+    position: relative;
+}
+
+.imagen-div {
+    position: relative;
+
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.calendario1 {
+    position: absolute;
+    height: 23.5%;
+    width: 5%;
+    top: 18%;
+    left: 8.7%;
+    transform: rotate(-4.5deg);
+}
+
+.calendario2 {
+    position: absolute;
+    height: 23.5%;
+    width: 5%;
+    top: 18%;
+    left: 16%;
+    transform: rotate(0deg);
+}
+
+.calendario3 {
+    position: absolute;
+    height: 23.5%;
+    width: 4.5%;
+    top: 14%;
+    left: 23.6%;
+    transform: rotate(0deg); 
+}
+
+
+.calendario4 {
+    position: absolute;
+    height: 21%;
+    width: 4.5%;
+    top: 18%;
+    left: 31%;
+    transform: rotate(0deg);
+   
+}
+
+.calendario5 {
+    position: absolute;
+    height: 21%;
+    width: 4.5%;
+    top: 18%;
+    left: 40%;
+    transform: rotate(0deg);
+}
+
+.calendario6 {
+    position: absolute;
+    height: 22%;
+    width: 4.5%;
+    top: 18%;
+    left: 48.6%;
+    transform: rotate(-4deg);
+}
+
+.calendario7 {
+    position: absolute;
+    height: 22%;
+    width: 4.5%;
+    top: 17.5%;
+    right: 38.8%;
+    transform: rotate(-6deg);
+}
+
+.calendario8 {
+    position: absolute;
+    height: 22%;
+    width: 4.5%;
+    top: 17.2%;
+    right: 29.5%;
+    transform: rotate(-4deg);
+}
+
+.calendario9 {
+    position: absolute;
+    height: 22%;
+    width: 4.5%;
+    top: 16.2%;
+    right: 23%;
+    transform: rotate(-4deg);
+}
+
+.calendario10 {
+    position: absolute;
+    height: 15%;
+    width: 3.2%;
+    top: 17.8%;
+    right: 17.8%;
+    transform: rotate(-4deg);
+}
+
+.calendario11 {
+    position: absolute;
+    height: 19.5%;
+    width: 4%;
+    top: 18.5%;
+    right: 10.5%;
+    transform: rotate(0deg);
+}
+
+.calendario12 {
+    position: absolute;
+    height: 15.5%;
+    width: 3.4%;
+    top: 17.6%;
+    right: 4.3%;
+    transform: rotate(0deg);
+}
+
+.audio-manager {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    height: calc(100vh *0.07);
+    width: calc(100vh *0.07);
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    & img {
+        height: 50%;
+        width: 50%;
+    }
+
+}
